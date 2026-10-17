@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LYTHNESS | Anime & Seiyuu Hub - AMBANIMESQD</title>
+  
+  <!-- SEO & Branding Meta Tags -->
+  <meta name="description" content="Arsip info seiyuu anime, kreator editing TikTok, dan markas resmi komunitas AMBANIMESQD oleh LYTHNESS (@ness.senpai).">
+  <meta name="keywords" content="ambanimesqd, lythness, ness senpai, seiyuu anime, pengisi suara anime, komunitas anime indonesia">
+  <meta name="author" content="LYTHNESS">
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- FontAwesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <!-- Google Fonts: Plus Jakarta Sans & Cinzel -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;900&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+            serif: ['"Cinzel"', 'serif'],
+          },
+          colors: {
+            gb: {
+              bg: '#0f0d0b',         /* Warm Obsidian Espresso */
+              card: '#1a1511',       /* Dark Chocolate / Card */
+              cardHover: '#221c17',  /* Card saat di-hover */
+              border: '#382b1f',     /* Subtle Brown Border */
+              dark: '#5c3d18',       /* Deep Golden Brown */
+              DEFAULT: '#b8823b',    /* Signature Golden Brown */
+              light: '#d99e52',      /* Highlight / Hover */
+              glow: '#f3c47e',       /* Aksen teks menyala */
+            }
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="bg-gb-bg text-[#eae3dc] font-sans antialiased selection:bg-gb selection:text-black">
+
+  <!-- NAVBAR -->
+  <nav class="sticky top-0 z-50 bg-gb-bg/90 backdrop-blur-md border-b border-gb-border/70 px-6 py-4">
+    <div class="max-w-6xl mx-auto flex justify-between items-center">
+      
+      <!-- Brand Logo -->
+      <a href="#" class="flex items-center gap-3 group">
+        <span class="text-2xl font-serif font-black tracking-widest text-gb group-hover:text-gb-light transition">
+          LYTHNESS
+        </span>
+        <span class="text-[10px] bg-gb-dark/40 text-gb-glow border border-gb/40 px-2.5 py-0.5 rounded-full font-bold tracking-wider">
+          AMBANIMESQD
+        </span>
+      </a>
+
+      <!-- Menu Navigasi -->
+      <div class="flex items-center gap-5 text-sm font-medium">
+        <a href="#showcase" class="hover:text-gb-light transition hidden md:inline-block">Galeri Seiyuu</a>
+        <a href="#komunitas" class="hover:text-gb-light transition hidden md:inline-block">Komunitas</a>
+        <a href="#poster" class="hover:text-gb-light transition hidden md:inline-block">Karya Poster</a>
+        <a href="#artikel" class="hover:text-gb-light transition hidden md:inline-block">Artikel</a>
+        <a href="https://tiktok.com/@ness.senpai" target="_blank" 
+           class="bg-gradient-to-r from-gb to-gb-light hover:brightness-110 text-[#0f0d0b] px-4 py-2 rounded-lg font-bold transition flex items-center gap-2 text-xs shadow-lg shadow-gb/20">
+          <i class="fa-brands fa-tiktok text-sm"></i> 
+          <span>@ness.senpai</span>
+        </a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO SECTION -->
+  <header class="max-w-6xl mx-auto px-6 pt-16 pb-12 flex flex-col md:flex-row items-center gap-10">
+    
+    <!-- Profile Avatar Container (profile.png) -->
+    <div class="relative shrink-0">
+      <div class="w-36 h-36 md:w-44 md:h-44 rounded-2xl p-[3px] bg-gradient-to-b from-gb-light via-gb to-gb-dark shadow-2xl shadow-gb/20">
+        <div class="w-full h-full bg-gb-card rounded-[13px] flex items-center justify-center overflow-hidden">
+          <img src="images/profile.png" alt="LYTHNESS Profile" class="w-full h-full object-cover">
+        </div>
+      </div>
+      <div class="absolute -bottom-3 left-1/2 -translate-x-1/2 bg-gb-card border border-gb/50 px-3 py-1 rounded-full text-[11px] font-bold text-gb-glow flex items-center gap-1.5 whitespace-nowrap shadow-md">
+        <span>🇬🇧</span> @ness.senpai
+      </div>
+    </div>
+
+    <!-- Bio & Pengantar -->
+    <div class="flex-1 text-center md:text-left space-y-4">
+      <div class="inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-wider text-gb-glow bg-gb-dark/30 border border-gb/30 px-3 py-1 rounded-md">
+        <i class="fa-solid fa-microphone text-gb"></i>
+        <span>Seiyuu Content Creator • AMBANIMESQD EST 08-02-25</span>
+      </div>
+
+      <h1 class="text-3xl md:text-5xl font-serif font-bold text-white tracking-wide leading-tight">
+        Menelusuri Jejak Suara Karakter Anime Favorit
+      </h1>
+
+      <p class="text-gray-300 text-sm md:text-base max-w-2xl leading-relaxed">
+        Selamat datang di ruang arsip digital resmi <strong>LYTHNESS</strong>. Di sini tersimpan ragam ulasan fakta pengisi suara (Japanese & English VA), desain kreatif, serta markas besar komunitas anime & kreator editing <strong>AMBANIMESQD</strong>.
+      </p>
+
+      <!-- Counter Badge -->
+      <div class="flex flex-wrap gap-4 pt-2 justify-center md:justify-start">
+        <div class="bg-gb-card border border-gb-border px-4 py-2 rounded-xl text-left min-w-[110px]">
+          <p class="text-xl font-extrabold text-gb-glow">14.1K+</p>
+          <p class="text-[10px] text-gray-400 uppercase tracking-wider">Followers</p>
+        </div>
+        <div class="bg-gb-card border border-gb-border px-4 py-2 rounded-xl text-left min-w-[110px]">
+          <p class="text-xl font-extrabold text-gb-glow">3.5M+</p>
+          <p class="text-[10px] text-gray-400 uppercase tracking-wider">Likes</p>
+        </div>
+        <div class="bg-gb-card border border-gb-border px-4 py-2 rounded-xl text-left min-w-[130px]">
+          <p class="text-xl font-extrabold text-gb-glow">08-02-25</p>
+          <p class="text-[10px] text-gray-400 uppercase tracking-wider">Est. Squad</p>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- KOMUNITAS AMBANIMESQD BANNER + RULES -->
+  <section id="komunitas" class="max-w-6xl mx-auto px-6 py-6">
+    <div class="relative overflow-hidden rounded-2xl bg-gradient-to-r from-gb-card via-[#231a14] to-gb-card border border-gb/40 p-8 shadow-xl space-y-6">
+      <div class="absolute -right-16 -top-16 w-56 h-56 bg-gb/15 rounded-full blur-3xl pointer-events-none"></div>
+
+      <div class="relative z-10 flex flex-col md:flex-row justify-between items-center gap-6">
+        <div>
+          <div class="flex items-center gap-2 text-xs font-mono text-gb-light mb-1">
+            <i class="fa-solid fa-users"></i>
+            <span>AMBANIMESQD • FOUNDED BY @Riza & @Sero (EST 08-02-25)</span>
+          </div>
+          <h2 class="text-2xl md:text-3xl font-serif font-bold text-white">
+            Markas Komunitas AMBANIMESQD
+          </h2>
+          <p class="text-gray-300 text-sm mt-1 max-w-xl">
+            Wadah berkumpulnya pecinta anime dan kreator editing TikTok Indonesia. Diskusi santai, bahas seiyuu, dan berkarya bareng!
+          </p>
+        </div>
+        
+        <!-- Action Buttons dengan Link Asli -->
+        <div class="flex flex-wrap gap-3 shrink-0">
+          <a href="https://discord.gg/TYUWxbkYMs" target="_blank" rel="noopener noreferrer" 
+             class="px-5 py-3 rounded-xl bg-[#5865F2] hover:bg-[#4752c4] font-bold text-xs flex items-center gap-2 text-white transition shadow-lg">
+            <i class="fa-brands fa-discord text-base"></i> Join Discord Server
+          </a>
+          <a href="https://chat.whatsapp.com/F3DPwcfU8Zj7UYDjHLG5Ft?s=cl&p=a&mlu=4&ilr=4" target="_blank" rel="noopener noreferrer" 
+             class="px-5 py-3 rounded-xl bg-[#25D366] hover:bg-[#1ebe57] font-bold text-xs flex items-center gap-2 text-white transition shadow-lg">
+            <i class="fa-brands fa-whatsapp text-base"></i> Join Grup WhatsApp
+          </a>
+        </div>
+      </div>
+
+      <!-- Community Rules Bar -->
+      <div class="relative z-10 pt-5 border-t border-gb-border/80 flex flex-col sm:flex-row items-center justify-between gap-3 text-xs">
+        <span class="font-bold text-gb-glow uppercase tracking-wider flex items-center gap-2">
+          <i class="fa-solid fa-shield-halved text-gb"></i> Rules Komunitas:
+        </span>
+        <div class="flex flex-wrap justify-center gap-2">
+          <span class="bg-gb-bg/80 border border-gb-border px-3 py-1 rounded-full font-semibold text-gray-300">🚫 NO RACISM</span>
+          <span class="bg-gb-bg/80 border border-gb-border px-3 py-1 rounded-full font-semibold text-gray-300">🔞 NO NSFW</span>
+          <span class="bg-gb-bg/80 border border-gb-border px-3 py-1 rounded-full font-semibold text-gray-300">🤝 NO SIRKEL</span>
+          <span class="bg-gb-bg/80 border border-gb-border px-3 py-1 rounded-full font-semibold text-gray-300">✌️ NO DRAMA</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SEIYUU SHOWCASE (KONTEN TIKTOK ARSIP) -->
+  <section id="showcase" class="max-w-6xl mx-auto px-6 py-14">
+    <div class="flex flex-col md:flex-row md:items-end justify-between mb-8 gap-4 border-b border-gb-border pb-4">
+      <div>
+        <h2 class="text-2xl md:text-3xl font-serif font-bold text-white">Arsip Konten & Database Seiyuu</h2>
+        <p class="text-gray-400 text-xs md:text-sm mt-1">Kompilasi profil pengisi suara yang pernah dibahas di feed TikTok @ness.senpai.</p>
+      </div>
+
+      <!-- Kategori Filter -->
+      <div class="flex gap-2 overflow-x-auto pb-1 text-xs">
+        <button class="bg-gradient-to-r from-gb to-gb-light text-black font-extrabold px-3.5 py-1.5 rounded-lg">Semua</button>
+        <button class="bg-gb-card border border-gb-border hover:border-gb text-gray-300 px-3.5 py-1.5 rounded-lg transition">Seiyuu 🗣️🎙️</button>
+        <button class="bg-gb-card border border-gb-border hover:border-gb text-gray-300 px-3.5 py-1.5 rounded-lg transition">English VA 🎙️🇬🇧</button>
+      </div>
+    </div>
+
+    <!-- Grid Konten -->
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+
+      <!-- CARD 1: Kawasumi Ayako (erina-jjba-va.jpeg) -->
+      <article class="bg-gb-card rounded-xl border border-gb-border overflow-hidden hover:border-gb transition duration-300 group flex flex-col justify-between shadow-lg hover:shadow-gb/10">
+        <div>
+          <div class="h-64 bg-[#120e0a] relative overflow-hidden border-b border-gb-border">
+            <img src="images/erina-jjba-va.jpeg" alt="Kawasumi Ayako - Erina Pendleton JJBA" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+            <div class="absolute top-3 left-3 bg-gradient-to-r from-gb-dark to-gb text-white text-[10px] font-bold px-2.5 py-1 rounded shadow-md border border-gb-light/30 backdrop-blur-md">
+              ERINA PENDLETON JJBA
+            </div>
+          </div>
+
+          <div class="p-5 space-y-2.5">
+            <div class="flex justify-between items-start">
+              <div>
+                <h3 class="text-lg font-bold text-white group-hover:text-gb-light transition">Kawasumi Ayako</h3>
+                <p class="text-xs text-gb font-medium">Erina (JJBA) • Saber (Fate Series)</p>
+              </div>
+              <i class="fa-solid fa-microphone-lines text-gb/60 text-lg"></i>
+            </div>
+            <p class="text-xs text-gray-400 leading-relaxed">
+              Profil seiyuu legendaris pembawa karakter anggun, mulai dari Erina Pendleton hingga Raja Ksatria Artoria Pendragon.
+            </p>
+          </div>
+        </div>
+
+        <div class="p-5 pt-0">
+          <div class="pt-3 border-t border-gb-border/80 flex justify-between items-center text-xs">
+            <span class="text-gray-500 font-mono">TikTok @ness.senpai</span>
+            <a href="https://tiktok.com/@ness.senpai" target="_blank" class="text-gb-light hover:text-white font-bold flex items-center gap-1 transition">
+              Tonton di TikTok <i class="fa-solid fa-arrow-up-right-from-square text-[10px]"></i>
+            </a>
+          </div>
+        </div>
+      </article>
+
+      <!-- CARD 2: Slot Konten Berikutnya -->
+      <article class="bg-gb-card/50 rounded-xl border border-dashed border-gb-border/80 overflow-hidden flex flex-col justify-center items-center p-8 text-center min-h-[350px]">
+        <div class="w-14 h-14 rounded-full bg-gb-dark/30 border border-gb/40 flex items-center justify-center text-gb-glow mb-4">
+          <i class="fa-solid fa-plus text-xl"></i>
+        </div>
+        <h3 class="text-base font-bold text-white">Update Seiyuu Berikutnya</h3>
+        <p class="text-xs text-gray-400 mt-2 max-w-xs leading-relaxed">
+          Konten seiyuu terbaru dari TikTok akan segera diarsipkan di slot ini.
+        </p>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- GALERI DESAIN POSTER & ARTWORK KOMUNITAS -->
+  <section id="poster" class="max-w-6xl mx-auto px-6 py-14 border-t border-gb-border">
+    <div class="mb-8">
+      <span class="text-xs uppercase tracking-widest text-gb font-mono">Creative Design Showcase</span>
+      <h2 class="text-2xl md:text-3xl font-serif font-bold text-white mt-1">Galeri Poster & Identitas Visual AMBANIMESQD</h2>
+      <p class="text-gray-400 text-xs md:text-sm mt-1">Karya desain poster orisinal untuk branding dan identitas komunitas.</p>
+    </div>
+
+    <!-- Banner Lebar (banner-sqd.jpg) -->
+    <div class="mb-6 rounded-2xl overflow-hidden border border-gb-border bg-gb-card shadow-lg group">
+      <div class="h-56 md:h-80 w-full overflow-hidden relative bg-[#120e0a]">
+        <img src="images/banner-sqd.jpg" alt="AMBANIMESQD Council Banner" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+        <div class="absolute bottom-3 left-3 bg-black/80 backdrop-blur-md px-3 py-1 rounded text-xs text-gb-glow border border-gb/30 font-semibold">
+          AMBANIMESQD Official Banner
+        </div>
+      </div>
+    </div>
+
+    <!-- 3 Poster Vertikal -->
+    <div class="grid grid-cols-1 sm:grid-cols-3 gap-6">
+      
+      <!-- Poster 1 -->
+      <div class="bg-gb-card rounded-xl border border-gb-border overflow-hidden hover:border-gb transition group">
+        <div class="aspect-[3/4] bg-[#120e0a] overflow-hidden">
+          <img src="images/poster-1.png" alt="AMBANIME Style Poster 1" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+        </div>
+        <div class="p-4">
+          <h4 class="font-bold text-white text-sm">AMBANIME SQD — Style Vol. 1</h4>
+          <p class="text-xs text-gray-400 mt-0.5">Magazine Cover Concept • EST 08-02-25</p>
+        </div>
+      </div>
+
+      <!-- Poster 2 -->
+      <div class="bg-gb-card rounded-xl border border-gb-border overflow-hidden hover:border-gb transition group">
+        <div class="aspect-[3/4] bg-[#120e0a] overflow-hidden">
+          <img src="images/poster-2.png" alt="AMBANIME Style Poster 2" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+        </div>
+        <div class="p-4">
+          <h4 class="font-bold text-white text-sm">AMBANIME SQD — Style Vol. 2</h4>
+          <p class="text-xs text-gray-400 mt-0.5">Editorial Noir Edition • EST 08-02-25</p>
+        </div>
+      </div>
+
+      <!-- Poster Rules -->
+      <div class="bg-gb-card rounded-xl border border-gb-border overflow-hidden hover:border-gb transition group">
+        <div class="aspect-[3/4] bg-[#120e0a] overflow-hidden">
+          <img src="images/poster-rules.png" alt="AMBANIME Rules Poster" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+        </div>
+        <div class="p-4">
+          <h4 class="font-bold text-white text-sm">Official Squad Rules Poster</h4>
+          <p class="text-xs text-gray-400 mt-0.5">No Racism • No NSFW • No Sirkel • No Drama</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ARTIKEL & JEJAK DIGITAL (KOMPASIANA) -->
+  <section id="artikel" class="max-w-6xl mx-auto px-6 py-12 border-t border-gb-border">
+    <div class="text-center max-w-xl mx-auto mb-8">
+      <span class="text-xs uppercase tracking-widest text-gb font-mono">Digital Footprint & Press</span>
+      <h2 class="text-2xl font-serif font-bold text-white mt-1">Artikel & Jejak Digital AMBANIMESQD</h2>
+      <p class="text-gray-400 text-xs mt-1">Publikasi resmi tentang komunitas kami yang sudah terindeks di Google.</p>
+    </div>
+
+    <div class="max-w-3xl mx-auto">
+      <a href="https://www.kompasiana.com/nessan9243/6aa9ffb034777c1037145072/ambanimesqd-wadah-komunitas-anime-dan-kreator-editing-tiktok-indonesia" 
+         target="_blank" rel="noopener noreferrer"
+         class="block p-6 rounded-2xl bg-gb-card border border-gb/50 hover:border-gb-light transition group shadow-xl">
+        <div class="flex items-center justify-between gap-2 mb-2">
+          <span class="text-[11px] text-gb-glow font-mono uppercase bg-gb-dark/40 px-3 py-1 rounded-full border border-gb/40">
+            <i class="fa-solid fa-newspaper mr-1"></i> Kompasiana Official Article
+          </span>
+          <span class="text-xs text-gray-400 group-hover:text-gb-light transition">
+            Buka Artikel <i class="fa-solid fa-arrow-up-right-from-square ml-1"></i>
+          </span>
+        </div>
+        <h3 class="font-serif font-bold text-white text-lg md:text-xl mt-2 group-hover:text-gb-light transition">
+          AMBANIMESQD: Wadah Komunitas Anime dan Kreator Editing TikTok Indonesia
+        </h3>
+        <p class="text-xs md:text-sm text-gray-300 mt-2 leading-relaxed">
+          Baca ulasan lengkap mengenai sejarah terbentuknya AMBANIMESQD, visi komunitas sebagai tempat bernaungnya para penggemar anime dan kreator editing TikTok di Indonesia, serta berbagai kegiatan positif di dalamnya.
+        </p>
+      </a>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="border-t border-gb-border py-8 px-6 text-center text-xs text-gray-500 bg-[#0b0a08]">
+    <p>© 2026 <strong class="text-gb font-serif">LYTHNESS</strong> (@ness.senpai). All rights reserved.</p>
+    <p class="mt-1 text-[11px] text-gray-600">Official Digital Hub of <strong class="text-gray-400">AMBANIMESQD (EST 08-02-25)</strong> • Hosted on GitHub Pages</p>
+  </footer>
+
+</body>
+</html>
