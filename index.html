@@ -79,7 +79,7 @@
   <!-- 2. HERO SECTION -->
   <header class="max-w-6xl mx-auto px-6 pt-16 pb-12 flex flex-col md:flex-row items-center gap-10">
     
-    <!-- Profile Avatar Container (profile.png) -->
+    <!-- Profile Avatar Container -->
     <div class="relative shrink-0">
       <div class="w-36 h-36 md:w-44 md:h-44 rounded-2xl p-[3px] bg-gradient-to-b from-gb-light via-gb to-gb-dark shadow-2xl shadow-gb/20">
         <div class="w-full h-full bg-gb-card rounded-[13px] flex items-center justify-center overflow-hidden">
@@ -93,18 +93,15 @@
 
     <!-- Bio & Introduction -->
     <div class="flex-1 text-center md:text-left space-y-4">
-      <!-- Top Sub-Badge -->
       <div class="inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-wider text-gb-glow bg-gb-dark/30 border border-gb/30 px-3 py-1 rounded-md">
         <i class="fa-solid fa-microphone text-gb"></i>
         <span>VOICE ACTOR CONTENT CREATOR • AMBANIMESQD EST. 08-02-25</span>
       </div>
 
-      <!-- Main Headline -->
       <h1 class="text-3xl md:text-5xl font-serif font-bold text-white tracking-wide leading-tight">
         TRACING THE VOICES OF YOUR FAVORITE ANIME CHARACTERS
       </h1>
 
-      <!-- Description Body Text -->
       <p class="text-gray-300 text-sm md:text-base max-w-2xl leading-relaxed">
         Welcome to the official digital archive of <strong>LYTHNESS</strong>. This repository documents voice actor insights (Japanese &amp; English VA), visual design projects, and serves as the primary headquarters for the <strong>AMBANIMESQD</strong> community.
       </p>
@@ -134,12 +131,10 @@
 
       <div class="relative z-10 flex flex-col md:flex-row justify-between items-center gap-6">
         <div>
-          <!-- Section Badge -->
           <div class="flex items-center gap-2 text-xs font-mono text-gb-light mb-1">
             <i class="fa-solid fa-users"></i>
             <span>AMBANIMESQD • OWNER @ness.senpai (EST. 08-02-25)</span>
           </div>
-          <!-- Section Title -->
           <h2 class="text-2xl md:text-3xl font-serif font-bold text-white">
             AMBANIMESQD COMMUNITY
           </h2>
@@ -148,7 +143,6 @@
           </p>
         </div>
         
-        <!-- Action Buttons -->
         <div class="flex flex-wrap gap-3 shrink-0">
           <a href="https://discord.gg/TYUWxbkYMs" target="_blank" rel="noopener noreferrer" 
              class="px-5 py-3 rounded-xl bg-[#5865F2] hover:bg-[#4752c4] font-bold text-xs flex items-center gap-2 text-white transition shadow-lg">
@@ -176,7 +170,7 @@
     </div>
   </section>
 
-  <!-- VOICE ACTOR GALLERY (SEIYUU SHOWCASE) -->
+  <!-- VOICE ACTOR GALLERY (DYNAMIC SHOWCASE) -->
   <section id="showcase" class="max-w-6xl mx-auto px-6 py-14">
     <div class="flex flex-col md:flex-row md:items-end justify-between mb-8 gap-4 border-b border-gb-border pb-4">
       <div>
@@ -184,63 +178,22 @@
         <p class="text-gray-400 text-xs md:text-sm mt-1">A curated compilation of voice actor profiles and character studies featured on @ness.senpai.</p>
       </div>
 
-      <!-- Category Filter -->
+      <!-- Interactive Category Filter Buttons -->
       <div class="flex gap-2 overflow-x-auto pb-1 text-xs">
-        <button class="bg-gradient-to-r from-gb to-gb-light text-black font-extrabold px-3.5 py-1.5 rounded-lg">All Works</button>
-        <button class="bg-gb-card border border-gb-border hover:border-gb text-gray-300 px-3.5 py-1.5 rounded-lg transition">Seiyuu 🗣️🎙️</button>
-        <button class="bg-gb-card border border-gb-border hover:border-gb text-gray-300 px-3.5 py-1.5 rounded-lg transition">English VA 🎙️🇬🇧</button>
+        <button onclick="filterGallery('all')" id="btn-all" class="bg-gradient-to-r from-gb to-gb-light text-black font-extrabold px-3.5 py-1.5 rounded-lg transition">
+          All Works
+        </button>
+        <button onclick="filterGallery('seiyuu')" id="btn-seiyuu" class="bg-gb-card border border-gb-border hover:border-gb text-gray-300 px-3.5 py-1.5 rounded-lg transition">
+          Seiyuu 🗣️🎙️
+        </button>
+        <button onclick="filterGallery('english-va')" id="btn-english-va" class="bg-gb-card border border-gb-border hover:border-gb text-gray-300 px-3.5 py-1.5 rounded-lg transition">
+          English VA 🎙️🇬🇧
+        </button>
       </div>
     </div>
 
-    <!-- Content Grid -->
-    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-
-      <!-- CARD 1: Kawasumi Ayako (erina-jjba-va.jpeg) -->
-      <article class="bg-gb-card rounded-xl border border-gb-border overflow-hidden hover:border-gb transition duration-300 group flex flex-col justify-between shadow-lg hover:shadow-gb/10">
-        <div>
-          <div class="h-64 bg-[#120e0a] relative overflow-hidden border-b border-gb-border">
-            <img src="images/erina-jjba-va.jpeg" alt="Kawasumi Ayako - Erina Pendleton JJBA" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
-            <div class="absolute top-3 left-3 bg-gradient-to-r from-gb-dark to-gb text-white text-[10px] font-bold px-2.5 py-1 rounded shadow-md border border-gb-light/30 backdrop-blur-md">
-              ERINA PENDLETON JJBA
-            </div>
-          </div>
-
-          <div class="p-5 space-y-2.5">
-            <div class="flex justify-between items-start">
-              <div>
-                <h3 class="text-lg font-bold text-white group-hover:text-gb-light transition">Kawasumi Ayako</h3>
-                <p class="text-xs text-gb font-medium">Erina (JJBA) • Saber (Fate Series)</p>
-              </div>
-              <i class="fa-solid fa-microphone-lines text-gb/60 text-lg"></i>
-            </div>
-            <p class="text-xs text-gray-400 leading-relaxed">
-              Exploring the illustrious career of the legendary voice actress behind noble and timeless characters, from Erina Pendleton to Artoria Pendragon.
-            </p>
-          </div>
-        </div>
-
-        <div class="p-5 pt-0">
-          <div class="pt-3 border-t border-gb-border/80 flex justify-between items-center text-xs">
-            <span class="text-gray-500 font-mono">TikTok @ness.senpai</span>
-            <a href="https://tiktok.com/@ness.senpai" target="_blank" class="text-gb-light hover:text-white font-bold flex items-center gap-1 transition">
-              Watch on TikTok <i class="fa-solid fa-arrow-up-right-from-square text-[10px]"></i>
-            </a>
-          </div>
-        </div>
-      </article>
-
-      <!-- CARD 2: Next Content Placeholder -->
-      <article class="bg-gb-card/50 rounded-xl border border-dashed border-gb-border/80 overflow-hidden flex flex-col justify-center items-center p-8 text-center min-h-[350px]">
-        <div class="w-14 h-14 rounded-full bg-gb-dark/30 border border-gb/40 flex items-center justify-center text-gb-glow mb-4">
-          <i class="fa-solid fa-plus text-xl"></i>
-        </div>
-        <h3 class="text-base font-bold text-white">Forthcoming Archive Entry</h3>
-        <p class="text-xs text-gray-400 mt-2 max-w-xs leading-relaxed">
-          Future voice actor analyses and curated TikTok features will be documented in this slot.
-        </p>
-      </article>
-
-    </div>
+    <!-- Content Grid (Otomatis diisi dari daftar di paling bawah) -->
+    <div id="gallery-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6"></div>
   </section>
 
   <!-- POSTER WORK & VISUAL IDENTITY -->
@@ -251,7 +204,7 @@
       <p class="text-gray-400 text-xs md:text-sm mt-1">Original editorial posters and visual branding crafted for the AMBANIMESQD collective.</p>
     </div>
 
-    <!-- Wide Banner (banner-sqd.jpg) -->
+    <!-- Wide Banner -->
     <div class="mb-6 rounded-2xl overflow-hidden border border-gb-border bg-gb-card shadow-lg group">
       <div class="h-56 md:h-80 w-full overflow-hidden relative bg-[#120e0a]">
         <img src="images/banner-sqd.jpg" alt="AMBANIMESQD Council Banner" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
@@ -263,8 +216,6 @@
 
     <!-- 3 Vertical Posters -->
     <div class="grid grid-cols-1 sm:grid-cols-3 gap-6">
-      
-      <!-- Poster 1 -->
       <div class="bg-gb-card rounded-xl border border-gb-border overflow-hidden hover:border-gb transition group">
         <div class="aspect-[3/4] bg-[#120e0a] overflow-hidden">
           <img src="images/poster-1.png" alt="AMBANIME Style Poster 1" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
@@ -275,7 +226,6 @@
         </div>
       </div>
 
-      <!-- Poster 2 -->
       <div class="bg-gb-card rounded-xl border border-gb-border overflow-hidden hover:border-gb transition group">
         <div class="aspect-[3/4] bg-[#120e0a] overflow-hidden">
           <img src="images/poster-2.png" alt="AMBANIME Style Poster 2" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
@@ -286,7 +236,6 @@
         </div>
       </div>
 
-      <!-- Poster Rules -->
       <div class="bg-gb-card rounded-xl border border-gb-border overflow-hidden hover:border-gb transition group">
         <div class="aspect-[3/4] bg-[#120e0a] overflow-hidden">
           <img src="images/poster-rules.png" alt="AMBANIME Rules Poster" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
@@ -296,7 +245,6 @@
           <p class="text-xs text-gray-400 mt-0.5">No Racism • No NSFW • No Sirkel • No Drama</p>
         </div>
       </div>
-
     </div>
   </section>
 
@@ -336,5 +284,97 @@
     <p class="mt-1 text-[11px] text-gray-600">Official Digital Hub of <strong class="text-gray-400">AMBANIMESQD (EST. 08-02-25)</strong> • Hosted on GitHub Pages</p>
   </footer>
 
+  <!-- ========================================================================= -->
+  <!-- TEMPAT MENAMBAH KONTEN BARU (CUKUP EDIT BAGIAN DAFTAR DI BAWAH INI SAJA) -->
+  <!-- ========================================================================= -->
+  <script>
+    const voiceActors = [
+      {
+        category: "seiyuu", // Ketik "seiyuu" untuk VA Jepang, atau "english-va" untuk VA Inggris
+        badge: "ERINA PENDLETON JJBA",
+        name: "Kawasumi Ayako",
+        roles: "Erina (JJBA) • Saber (Fate Series)",
+        description: "Exploring the illustrious career of the legendary voice actress behind noble and timeless characters, from Erina Pendleton to Artoria Pendragon.",
+        image: "images/erina-jjba-va.jpeg",
+        tiktokUrl: "https://tiktok.com/@ness.senpai"
+      }
+      // <-- Kalau mau nambah konten baru, tinggal tambahkan koma (,) setelah kurung kurawal di atas, lalu paste blok baru di bawahnya!
+    ];
+
+    function filterGallery(selectedCategory) {
+      const grid = document.getElementById('gallery-grid');
+      grid.innerHTML = '';
+
+      // Update warna tombol filter yang aktif
+      const buttons = ['all', 'seiyuu', 'english-va'];
+      buttons.forEach(cat => {
+        const btn = document.getElementById('btn-' + cat);
+        if (cat === selectedCategory) {
+          btn.className = "bg-gradient-to-r from-gb to-gb-light text-black font-extrabold px-3.5 py-1.5 rounded-lg transition";
+        } else {
+          btn.className = "bg-gb-card border border-gb-border hover:border-gb text-gray-300 px-3.5 py-1.5 rounded-lg transition";
+        }
+      });
+
+      // Saring data berdasarkan kategori
+      const filteredData = selectedCategory === 'all' 
+        ? voiceActors 
+        : voiceActors.filter(item => item.category === selectedCategory);
+
+      // Buat kartu otomatis untuk setiap data
+      filteredData.forEach(item => {
+        const categoryTag = item.category === 'english-va' ? '🇬🇧 English VA' : '🇯🇵 Seiyuu';
+        grid.innerHTML += `
+          <article class="bg-gb-card rounded-xl border border-gb-border overflow-hidden hover:border-gb transition duration-300 group flex flex-col justify-between shadow-lg hover:shadow-gb/10">
+            <div>
+              <div class="h-64 bg-[#120e0a] relative overflow-hidden border-b border-gb-border">
+                <img src="${item.image}" alt="${item.name}" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                <div class="absolute top-3 left-3 bg-gradient-to-r from-gb-dark to-gb text-white text-[10px] font-bold px-2.5 py-1 rounded shadow-md border border-gb-light/30 backdrop-blur-md">
+                  ${item.badge}
+                </div>
+                <div class="absolute bottom-2 right-2 bg-black/80 text-gb-glow text-[10px] px-2 py-0.5 rounded border border-gb/30">
+                  ${categoryTag}
+                </div>
+              </div>
+              <div class="p-5 space-y-2.5">
+                <div class="flex justify-between items-start">
+                  <div>
+                    <h3 class="text-lg font-bold text-white group-hover:text-gb-light transition">${item.name}</h3>
+                    <p class="text-xs text-gb font-medium">${item.roles}</p>
+                  </div>
+                  <i class="fa-solid fa-microphone-lines text-gb/60 text-lg"></i>
+                </div>
+                <p class="text-xs text-gray-400 leading-relaxed">${item.description}</p>
+              </div>
+            </div>
+            <div class="p-5 pt-0">
+              <div class="pt-3 border-t border-gb-border/80 flex justify-between items-center text-xs">
+                <span class="text-gray-500 font-mono">TikTok @ness.senpai</span>
+                <a href="${item.tiktokUrl}" target="_blank" class="text-gb-light hover:text-white font-bold flex items-center gap-1 transition">
+                  Watch on TikTok <i class="fa-solid fa-arrow-up-right-from-square text-[10px]"></i>
+                </a>
+              </div>
+            </div>
+          </article>
+        `;
+      });
+
+      // Kartu "Forthcoming Archive Entry" tetap muncul di akhir
+      grid.innerHTML += `
+        <article class="bg-gb-card/50 rounded-xl border border-dashed border-gb-border/80 overflow-hidden flex flex-col justify-center items-center p-8 text-center min-h-[350px]">
+          <div class="w-14 h-14 rounded-full bg-gb-dark/30 border border-gb/40 flex items-center justify-center text-gb-glow mb-4">
+            <i class="fa-solid fa-plus text-xl"></i>
+          </div>
+          <h3 class="text-base font-bold text-white">Forthcoming Archive Entry</h3>
+          <p class="text-xs text-gray-400 mt-2 max-w-xs leading-relaxed">
+            Future voice actor analyses and curated TikTok features will be documented in this slot.
+          </p>
+        </article>
+      `;
+    }
+
+    // Jalankan pertama kali saat halaman dibuka
+    filterGallery('all');
+  </script>
 </body>
 </html>
